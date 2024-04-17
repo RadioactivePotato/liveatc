@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KJFK</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <h1>KJFK</h1>
+  <button onclick="askForURL()">Enter URL</button>
+
+  <script src="script.js"></script>
+  <br>
+
+  <pre>
+    ARINC (JFK/LGA Area):
+    - https://www.liveatc.net/play/kjfk_arinc.pls
+    - http://d.liveatc.net/kjfk_arinc
+    - http://s1-lhr.liveatc.net/kjfk_arinc
+    
+    KJFK Clearance Delivery #1:
+    - https://www.liveatc.net/play/kjfk_del3.pls
+    - http://d.liveatc.net/kjfk_del3
+    - http://s1-bos.liveatc.net/kjfk_del3
+
+    KJFK Clearance Delivery #2:
+    - https://www.liveatc.net/play/kjfk_del2.pls
+    - http://d.liveatc.net/kjfk_del2
+    - http://s1-bos.liveatc.net/kjfk_del2
+
+    KJFK Company/Ramp:
+    - https://www.liveatc.net/play/kjfk_co.pls
+    - http://d.liveatc.net/kjfk_co
+    - http://s1-bos.liveatc.net/kjfk_co
+
+    KJFK D-ATIS:
+    - https://www.liveatc.net/play/kjfk_atis.pls
+    - http://d.liveatc.net/kjfk_atis
+    - https://s1-bos.liveatc.net/kjfk_atis
+
+    KJFK Gnd/Twr:
+    - https://www.liveatc.net/play/kjfk9_s.pls
+    - http://d.liveatc.net/kjfk9_s
+    - https://s1-bos.liveatc.net/kjfk9_s
+
+    KJFK Ground #1:
+    - https://www.liveatc.net/play/kjfk9_gnd.pls
+    - http://d.liveatc.net/kjfk9_gnd
+
+    KJFK Ground #2:
+    - https://www.liveatc.net/play/kjfk_gnd.pls
+    - http://d.liveatc.net/kjfk_gnd
+
+    KJFK Tower:
+    - https://www.liveatc.net/play/kjfk_twr.pls
+    - http://d.liveatc.net/kjfk_twr
+
+    KJFK Tower #2:
+    - https://www.liveatc.net/play/kjfk_twr3.pls
+    - http://d.liveatc.net/kjfk_twr3
+
+    KJFK Tower #3:
+    - https://www.liveatc.net/play/kjfk9_twr.pls
+    - http://d.liveatc.net/kjfk9_twr
+
+    KJFK Tower 119.1:
+    - https://www.liveatc.net/play/kjfk_twr_1191.pls
+    - http://d.liveatc.net/kjfk_twr_1191
+
+    KJFK Tower 123.9:
+    - https://www.liveatc.net/play/kjfk_twr_1239.pls
+    - http://d.liveatc.net/kjfk_twr_1239
+
+    NY Approach (CAMRN/JFK) #1:
+    - https://www.liveatc.net/play/kjfk9_app_camrn.pls
+    - http://d.liveatc.net/kjfk9_app_camrn
+
+    NY Approach (CAMRN/JFK) #2:
+    - https://www.liveatc.net/play/kjfk_bw_app_camrn.pls
+    - http://d.liveatc.net/kjfk_bw_app_camrn
+
+    NY Approach (CAMRN/JFK) #3:
+    - https://www.liveatc.net/play/kjfk_118_app_camrn.pls
+    - http://d.liveatc.net/kjfk_118_app_camrn
+
+    NY Approach (Final/JFK) #1:
+    - https://www.liveatc.net/play/kjfk_bw_app_final.pls
+    - http://d.liveatc.net/kjfk_bw_app_final
+
+    NY Approach (Final/JFK) #2:
+    - https://www.liveatc.net/play/kjfk_118_app_final.pls
+    - http://d.liveatc.net/kjfk_118_app_final
+
+    NY Approach (ROBER/JFK #1):
+    - https://www.liveatc.net/play/kjfk9_app_rober.pls
+    - http://d.liveatc.net/kjfk9_app_rober
+
+    NY Approach (ROBER/JFK #2):
+    - https://www.liveatc.net/play/kjfk_app_rober.pls
+    - http://d.liveatc.net/kjfk_app_rober
+
+    NY Dep (Liberty North) #1:
+    - https://www.liveatc.net/play/khpn_app_lib_n.pls
+    - http://d.liveatc.net/khpn_app_lib_n
+
+    NY Dep (Liberty North) #2:
+    - https://www.liveatc.net/play/ny_app_lib_north.pls
+    - http://d.liveatc.net/ny_app_lib_north
+
+    NY Departure (JFK):
+    - https://www.liveatc.net/play/kjfk_dep.pls
+    - http://d.liveatc.net/kjfk_dep
+
+    ZBW Boston Center (CLIPR32):
+    - https://www.liveatc.net/play/zbw_ccc1.pls
+    - http://d.liveatc.net/zbw_ccc1
+
+    ZBW Boston Center (HTO31):
+    - https://www.liveatc.net/play/zbw_ccc2.pls
+    - http://d.liveatc.net/zbw_ccc2
+
+    ZBW/ZNY/ZDC (JFK Area) #1:
+    - https://www.liveatc.net/play/zbw_ron1.pls
+    - http://d.liveatc.net/zbw_ron1
+
+    ZBW/ZNY/ZDC (JFK Area) #2:
+    - https://www.liveatc.net/play/zbw_ron2.pls
+    - http://d.liveatc.net/zbw_ron2
+
+    ZBW/ZNY/ZDC (JFK Area) #3:
+    - https://www.liveatc.net/play/zbw_ron3.pls
+    - http://d.liveatc.net/zbw_ron3
+
+    ZBW/ZNY/ZDC (JFK Area) #4:
+    - https://www.liveatc.net/play/zbw_ron4.pls
+    - http://d.liveatc.net/zbw_ron4
+
+    ZNY Misc (NE PA):
+    - https://www.liveatc.net/play/zbw_ron5.pls
+    - http://d.liveatc.net/zbw_ron5
+
+    ZNY Sector 56 (Kennedy):
+    - https://www.liveatc.net/play/zny_col_ken.pls
+    - http://d.liveatc.net/zny_col_ken
+
+    ZNY Sector 67 (Dixie):
+    - https://www.liveatc.net/play/zny_col_dix.pls
+    - http://d.liveatc.net/zny_col_dix
+  </pre>
+
+</body>
+
+</html>
